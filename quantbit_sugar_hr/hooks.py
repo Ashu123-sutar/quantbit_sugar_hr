@@ -5,6 +5,9 @@ app_description = "HR Management System"
 app_email = "contact@erpdata.in"
 app_license = "mit"
 
+
+
+
 # Apps
 # ------------------
 
@@ -247,3 +250,13 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["module", "=", "Quantbit Sugar HR"]
+        ]
+    }
+  
+]
