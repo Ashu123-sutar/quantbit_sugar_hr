@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-23 13:01:30.643410",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wxsi",
+  "naming_series",
+  "column_break_eaqa",
+  "column_break_kasn",
+  "section_break_lxhm",
+  "company",
+  "column_break_ziwu",
+  "branch",
+  "column_break_rrqy",
+  "posting_date",
+  "amended_from",
+  "section_break_egra",
+  "from_date",
+  "column_break_vryn",
+  "to_date",
+  "column_break_vwbf",
+  "season_type",
+  "section_break_pjna",
+  "column_break_idaq",
+  "column_break_sqcg",
+  "column_break_leho",
+  "column_break_nxtu",
+  "select_all"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wxsi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "EH-"
+  },
+  {
+   "fieldname": "column_break_eaqa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kasn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lxhm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ziwu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rrqy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Holiday",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_egra",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_vryn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_vwbf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "season_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Season Type",
+   "options": "\nOn Season\nOff Season"
+  },
+  {
+   "fieldname": "section_break_pjna",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_idaq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sqcg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_leho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nxtu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.season_type == \"On Season\"",
+   "fieldname": "select_all",
+   "fieldtype": "Button",
+   "label": "Select All"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-23 14:54:35.772709",
+ "modified_by": "Administrator",
+ "module": "Quantbit Sugar HR",
+ "name": "Employee Holiday",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
