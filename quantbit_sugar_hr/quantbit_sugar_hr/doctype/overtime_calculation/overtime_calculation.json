@@ -1,0 +1,221 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-23 11:01:20.581464",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series_section",
+  "naming_series",
+  "column_break_psix",
+  "company",
+  "section_break_lwro",
+  "from_date",
+  "column_break_gnxq",
+  "to_date",
+  "column_break_zzle",
+  "month",
+  "column_break_fmxv",
+  "year",
+  "section_break_lkgm",
+  "column_break_jlqp",
+  "column_break_kyua",
+  "column_break_jhje",
+  "column_break_kcta",
+  "column_break_ozkr",
+  "column_break_ltux",
+  "select_all",
+  "section_break_uwnj",
+  "supevisor_details",
+  "section_break_gdhw",
+  "get_overtime",
+  "overtime_hours_calculation",
+  "section_break_ceui",
+  "overtime_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "naming_series_section",
+   "fieldtype": "Section Break",
+   "label": "Number Series"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "OTC-"
+  },
+  {
+   "fieldname": "column_break_psix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_lwro",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_gnxq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "To Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zzle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fmxv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_lkgm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jlqp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kyua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jhje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kcta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ozkr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ltux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_all",
+   "fieldtype": "Button",
+   "label": "Select All"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Overtime Calculation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_uwnj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supevisor_details",
+   "fieldtype": "Table",
+   "label": "Supevisor Details",
+   "options": "Overtime Calculation Supervisor Details"
+  },
+  {
+   "fieldname": "section_break_gdhw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_overtime",
+   "fieldtype": "Button",
+   "label": "Get Overtime"
+  },
+  {
+   "fieldname": "overtime_hours_calculation",
+   "fieldtype": "Table",
+   "label": "Overtime Hours Calculation",
+   "options": "Overtime Calculation Summary Details"
+  },
+  {
+   "fieldname": "section_break_ceui",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overtime_details",
+   "fieldtype": "Table",
+   "label": "Overtime Details",
+   "options": "Overtime Calculation Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-23 11:35:57.785995",
+ "modified_by": "Administrator",
+ "module": "Quantbit Sugar HR",
+ "name": "Overtime Calculation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

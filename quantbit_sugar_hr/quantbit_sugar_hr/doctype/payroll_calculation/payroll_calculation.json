@@ -1,0 +1,199 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-23 12:34:59.991226",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hwwb",
+  "naming_series",
+  "section_break_pujc",
+  "company",
+  "column_break_spkk",
+  "branch",
+  "column_break_nrsm",
+  "season_for_payroll",
+  "section_break_mmqv",
+  "from_date",
+  "column_break_dukj",
+  "to_date",
+  "column_break_ayag",
+  "month",
+  "column_break_hran",
+  "year",
+  "section_break_vuvi",
+  "calculate_payroll",
+  "payroll_calculation_details",
+  "section_break_ncxo",
+  "payroll_dates",
+  "section_break_jzcl",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_hwwb",
+   "fieldtype": "Section Break",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "PAY-"
+  },
+  {
+   "fieldname": "section_break_pujc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_spkk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nrsm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "season_for_payroll",
+   "fieldtype": "Link",
+   "label": "Season For Payroll",
+   "options": "Season For Payroll"
+  },
+  {
+   "fieldname": "section_break_mmqv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dukj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ayag",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hran",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vuvi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate_payroll",
+   "fieldtype": "Button",
+   "label": "Calculate Payroll"
+  },
+  {
+   "fieldname": "payroll_calculation_details",
+   "fieldtype": "Table",
+   "label": "Payroll Calculation Details",
+   "options": "Payroll Calculation Details"
+  },
+  {
+   "fieldname": "section_break_ncxo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payroll_dates",
+   "fieldtype": "Table",
+   "label": "Payroll Dates ",
+   "options": "Payroll Details"
+  },
+  {
+   "fieldname": "section_break_jzcl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Payroll Calculation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-23 12:46:34.925998",
+ "modified_by": "Administrator",
+ "module": "Quantbit Sugar HR",
+ "name": "Payroll Calculation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-23 11:26:07.322007",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supervisor_id",
+  "employee_id",
+  "employee_name",
+  "overtime_hrs",
+  "overtime_rate",
+  "column_break_srpx",
+  "date",
+  "overtime_id",
+  "supervisor_name",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "supervisor_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Supervisor ID",
+   "options": "Employee"
+  },
+  {
+   "columns": 1,
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee ID",
+   "options": "Employee"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name"
+  },
+  {
+   "columns": 2,
+   "fieldname": "overtime_hrs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Overtime Hrs",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "overtime_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Overtime Rate",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_srpx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "overtime_id",
+   "fieldtype": "Link",
+   "label": "Overtime ID",
+   "options": "Overtime Entry"
+  },
+  {
+   "fetch_from": "supervisor_id.employee_name",
+   "fieldname": "supervisor_name",
+   "fieldtype": "Data",
+   "label": "Supervisor Name"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Total Amount",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-23 11:32:40.038243",
+ "modified_by": "Administrator",
+ "module": "Quantbit Sugar HR",
+ "name": "Overtime Calculation Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
