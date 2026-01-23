@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-23 12:17:48.881618",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "present_days",
+  "column_break_adcr",
+  "retention_days",
+  "out_duty_days",
+  "month_salary",
+  "section_break_xpsu",
+  "basic",
+  "medical_allowance",
+  "hra",
+  "convenience_allowance",
+  "column_break_ejax",
+  "petrol_allowance",
+  "overtime_amount",
+  "bonus_amount",
+  "lta"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "present_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Present Days",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_adcr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "retention_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Retention Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "out_duty_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Out Duty Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "month_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Month Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xpsu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "basic",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Basic",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_allowance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Medical Allowance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hra",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "HRA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "convenience_allowance",
+   "fieldtype": "Float",
+   "label": " Convenience Allowance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ejax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "petrol_allowance",
+   "fieldtype": "Float",
+   "in_standard_filter": 1,
+   "label": "Petrol Allowance",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "overtime_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Overtime Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bonus_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bonus Amount",
+   "mandatory_depends_on": "Overtime Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lta",
+   "fieldtype": "Float",
+   "label": "LTA",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-23 12:30:33.410795",
+ "modified_by": "Administrator",
+ "module": "Quantbit Sugar HR",
+ "name": "Payroll Calculation Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

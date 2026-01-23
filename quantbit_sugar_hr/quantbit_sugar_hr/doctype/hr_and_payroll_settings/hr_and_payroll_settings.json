@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-23 11:42:03.666432",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "off_season_holiday_day",
+  "column_break_prns",
+  "public_holiday_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "off_season_holiday_day",
+   "fieldtype": "Select",
+   "label": "Off Season Holiday Day",
+   "options": "Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday"
+  },
+  {
+   "fieldname": "column_break_prns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "public_holiday_list",
+   "fieldtype": "Link",
+   "label": "Public Holiday List",
+   "options": "Holiday List"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-01-23 11:43:25.551998",
+ "modified_by": "Administrator",
+ "module": "Quantbit Sugar HR",
+ "name": "HR and Payroll Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
