@@ -1,0 +1,323 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-23 15:35:41.905603",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_payroll_details_section",
+  "from_date",
+  "lta",
+  "basic",
+  "hra",
+  "column_break_bvhp",
+  "fda",
+  "bonus",
+  "da",
+  "overtime_ot",
+  "column_break_kfqj",
+  "leave_encashment",
+  "medical_allowance",
+  "washing_allowance",
+  "night_shift_allowance",
+  "column_break_otpy",
+  "ca",
+  "total_amount",
+  "weight_allowance",
+  "section_break_zbcp",
+  "allowance_1",
+  "telephone_bhatta",
+  "petrol_allowance_in_amount",
+  "column_break_znzk",
+  "allowance_2",
+  "dearness_allowance",
+  "petrol_allowance",
+  "column_break_crma",
+  "allowance_3",
+  "fixed_allowance",
+  "maintenance_amount",
+  "column_break_gypo",
+  "allowance_4",
+  "bhatta_amount",
+  "personal_pay",
+  "column_break_tops",
+  "allowance_5",
+  "special_allowance"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "default": "Today",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_bvhp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kfqj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_otpy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "basic",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Basic"
+  },
+  {
+   "columns": 2,
+   "fieldname": "hra",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "HRA"
+  },
+  {
+   "columns": 2,
+   "fieldname": "lta",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "LTA"
+  },
+  {
+   "fieldname": "medical_allowance",
+   "fieldtype": "Currency",
+   "label": "Medical Allowance"
+  },
+  {
+   "columns": 2,
+   "fieldname": "ca",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Conveyance Allowance"
+  },
+  {
+   "columns": 2,
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Total Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "allowance_1",
+   "fieldtype": "Float",
+   "label": "Allowance 1",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_znzk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_crma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gypo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tops",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "telephone_bhatta",
+   "fieldtype": "Currency",
+   "label": "Telephone Bhatta",
+   "precision": "2"
+  },
+  {
+   "fieldname": "petrol_allowance_in_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Petrol Allowance In Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "allowance_2",
+   "fieldtype": "Currency",
+   "label": "Allowance 2",
+   "precision": "2"
+  },
+  {
+   "fieldname": "dearness_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Dearness Allowance"
+  },
+  {
+   "fieldname": "petrol_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Petrol Allowance (In Ltr.)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "allowance_3",
+   "fieldtype": "Currency",
+   "label": "Allowance 3",
+   "precision": "2"
+  },
+  {
+   "fieldname": "fixed_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Fixed Allowance"
+  },
+  {
+   "fieldname": "maintenance_amount",
+   "fieldtype": "Currency",
+   "label": "Maintenance Amount"
+  },
+  {
+   "fieldname": "allowance_4",
+   "fieldtype": "Currency",
+   "label": "Allowance 4",
+   "precision": "2"
+  },
+  {
+   "fieldname": "bhatta_amount",
+   "fieldtype": "Currency",
+   "label": "Bhatta Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "personal_pay",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Personal Pay"
+  },
+  {
+   "fieldname": "allowance_5",
+   "fieldtype": "Currency",
+   "label": "Allowance 5",
+   "precision": "2"
+  },
+  {
+   "fieldname": "special_allowance",
+   "fieldtype": "Currency",
+   "label": "Special Allowance",
+   "precision": "2"
+  },
+  {
+   "fieldname": "employee_payroll_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Payroll Details"
+  },
+  {
+   "fieldname": "section_break_zbcp",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "More Allowances"
+  },
+  {
+   "fieldname": "da",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "DA",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "fda",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "FDA",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "washing_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Washing Allowance",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "weight_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Weight Allowance",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "night_shift_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Night Shift Allowance",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "overtime_ot",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": " Overtime (OT)",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "bonus",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bonus",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "leave_encashment",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Leave Encashment",
+   "precision": "2"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-23 17:47:06.142598",
+ "modified_by": "Administrator",
+ "module": "Quantbit Sugar HR",
+ "name": "Employee Payroll Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
