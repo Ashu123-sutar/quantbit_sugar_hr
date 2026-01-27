@@ -1,13 +1,10 @@
 # Copyright (c) 2026, Quantbit Technologies and contributors
 # For license information, please see license.txt
 
-
 import frappe
 from frappe.model.document import Document
-
 from frappe.utils import getdate
 from frappe import _
-
 
 class OvertimeCalculation(Document):
 
@@ -130,19 +127,3 @@ class OvertimeCalculation(Document):
                 "end_date": self.to_date
             })
 
-# @frappe.whitelist()
-    # def get_overtime(self):
-    #     self.set("overtime_details", [])
-    #     self.set("overtime_hours_calculation", [])
-    #     num_days = 0
-    #     try:
-    #         num_days = (getdate(self.to_date) - getdate(self.from_date)).days + 1
-    #         from_date = datetime.strptime(self.from_date, '%Y-%m-%d').date()
-            
-    #     except Exception as e:
-    #         frappe.throw(_("Invalid 'From Date'. Error: {0}").format(e))
-    #         return
-
-    # ORDER BY
-    #             oed.employee_id,
-    #             epd.from_date DESC

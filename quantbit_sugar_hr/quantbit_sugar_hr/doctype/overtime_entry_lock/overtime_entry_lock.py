@@ -5,7 +5,6 @@
 import frappe
 from frappe.model.document import Document
 
-
 class OvertimeEntryLock(Document):
 	def before_save(self):
 		self.update_ot_lock()

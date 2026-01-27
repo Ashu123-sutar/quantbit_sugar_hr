@@ -1,16 +1,12 @@
 // Copyright (c) 2026, Quantbit Technologies and contributors
 // For license information, please see license.txt
 
-
-
 frappe.ui.form.on("Overtime Entry", {
     refresh: function(frm) {
                      $('.layout-side-section').hide();
                      $('.layout-main-section-wrapper').css('margin-left', '0');
     }
 });
-
-
 
 frappe.ui.form.on('Overtime Entry', {
     date: function(frm) {
@@ -33,29 +29,5 @@ frappe.ui.form.on('Overtime Entry', {
         });
     }
 });
-
-
-
-
-// frappe.ui.form.on("Overtime Entry", {
-// 	refresh(frm) {
-
-// 	},
-// });
-
-// frappe.ui.form.on('Overtime Entry Details', {
-//     date: function(frm,cdt,cdn) {
-//         var r=locals[cdt][cdn];
-//         frm.call({
-//             method:'check_repeat_entry',
-//             doc:frm.doc,
-//             args:{
-//                 "emp_id":r.employee_id,
-//                 "idx":r.idx,
-//                 "date":r.date
-//             }
-//         })
-//     }
-// });
 
 

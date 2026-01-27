@@ -1,11 +1,6 @@
 // Copyright (c) 2026, Quantbit Technologies and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Overtime Calculation", {
-// 	refresh(frm) {
-
-// 	},
-// });
 function getMonthDates(input_date) {
     const selected_date = new Date(input_date);
     const year = selected_date.getFullYear();
