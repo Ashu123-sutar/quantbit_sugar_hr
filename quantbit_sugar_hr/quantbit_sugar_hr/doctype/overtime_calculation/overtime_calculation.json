@@ -8,7 +8,7 @@
  "field_order": [
   "naming_series_section",
   "naming_series",
-  "column_break_psix",
+  "section_break_nuoj",
   "company",
   "section_break_lwro",
   "from_date",
@@ -49,10 +49,6 @@
    "options": "OTC-"
   },
   {
-   "fieldname": "column_break_psix",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
@@ -67,7 +63,6 @@
    "fieldname": "from_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "From Date"
   },
   {
@@ -79,7 +74,6 @@
    "fieldname": "to_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "To Date",
    "read_only": 1
   },
@@ -186,13 +180,17 @@
    "fieldtype": "Table",
    "label": "Overtime Details",
    "options": "Overtime Calculation Details"
+  },
+  {
+   "fieldname": "section_break_nuoj",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-23 11:35:57.785995",
+ "modified": "2026-01-27 14:13:55.118339",
  "modified_by": "Administrator",
  "module": "Quantbit Sugar HR",
  "name": "Overtime Calculation",

@@ -63,7 +63,6 @@
    "fieldname": "from_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "From Date",
    "reqd": 1
   },
@@ -75,7 +74,6 @@
    "fieldname": "to_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "To Date"
   },
   {
@@ -99,7 +97,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-23 14:54:36.010945",
+ "modified": "2026-01-27 14:10:59.304410",
  "modified_by": "Administrator",
  "module": "Quantbit Sugar HR",
  "name": "Overtime Entry Lock",
