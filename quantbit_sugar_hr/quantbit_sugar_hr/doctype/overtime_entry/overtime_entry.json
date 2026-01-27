@@ -19,7 +19,6 @@
   "ot_lock",
   "section_break_epnc",
   "overtime_details",
-  "section_break_zyhn",
   "amended_from"
  ],
  "fields": [
@@ -33,6 +32,7 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming Series",
+   "options": "OTE-",
    "read_only": 1
   },
   {
@@ -100,10 +100,6 @@
    "options": "Overtime Entry Details"
   },
   {
-   "fieldname": "section_break_zyhn",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -117,7 +113,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-23 10:53:06.417155",
+ "modified": "2026-01-24 13:16:50.326971",
  "modified_by": "Administrator",
  "module": "Quantbit Sugar HR",
  "name": "Overtime Entry",
