@@ -16,7 +16,6 @@
   "branch",
   "column_break_rrqy",
   "posting_date",
-  "amended_from",
   "section_break_egra",
   "from_date",
   "column_break_vryn",
@@ -28,18 +27,90 @@
   "column_break_sqcg",
   "column_break_leho",
   "column_break_nxtu",
-  "select_all"
+  "select_all",
+  "section_break_huct",
+  "holiday_date_details",
+  "holiday_details_section",
+  "employee_holiday_details",
+  "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "section_break_wxsi",
-   "fieldtype": "Section Break"
-  },
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming Series",
    "options": "EH-"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "To Date"
+  },
+  {
+   "fieldname": "holiday_date_details",
+   "fieldtype": "Table",
+   "label": "Holiday Date Details",
+   "options": "Holiday Date Details"
+  },
+  {
+   "depends_on": "eval:doc.season_type == \"On Season\"",
+   "fieldname": "select_all",
+   "fieldtype": "Button",
+   "label": "Select All"
+  },
+  {
+   "fieldname": "season_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Season Type",
+   "options": "\nOn Season\nOff Season"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Holiday",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_wxsi",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "column_break_eaqa",
@@ -54,79 +125,24 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "company",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Company",
-   "options": "Company",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_ziwu",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "branch",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Branch",
-   "options": "Branch",
-   "reqd": 1
   },
   {
    "fieldname": "column_break_rrqy",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "posting_date",
-   "fieldtype": "Date",
-   "label": "Posting Date"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Employee Holiday",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
-  {
    "fieldname": "section_break_egra",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "from_date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "From Date"
   },
   {
    "fieldname": "column_break_vryn",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "to_date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "To Date"
-  },
-  {
    "fieldname": "column_break_vwbf",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "season_type",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Season Type",
-   "options": "\nOn Season\nOff Season"
   },
   {
    "fieldname": "section_break_pjna",
@@ -149,17 +165,26 @@
    "fieldtype": "Column Break"
   },
   {
-   "depends_on": "eval:doc.season_type == \"On Season\"",
-   "fieldname": "select_all",
-   "fieldtype": "Button",
-   "label": "Select All"
+   "fieldname": "section_break_huct",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_holiday_details",
+   "fieldtype": "Table",
+   "label": "Employee Holiday Details",
+   "options": "Employee Holiday Details"
+  },
+  {
+   "fieldname": "holiday_details_section",
+   "fieldtype": "Section Break",
+   "label": "Holiday Details"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-23 14:54:35.772709",
+ "modified": "2026-01-24 12:12:26.349169",
  "modified_by": "Administrator",
  "module": "Quantbit Sugar HR",
  "name": "Employee Holiday",
